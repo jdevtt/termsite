@@ -1,16 +1,19 @@
 {
-  "name": "liveterm",
-  "version": "0.1.0",
+  "homepage": "https://jdevtt.github.io/termsite",
+  "name": "termsite",
+  "version": "1.1.0",
   "license": "MIT",
   "author": {
-    "name": "Vincent Wu",
-    "url": "https://cveinnt.com",
-    "email": "contact@wensenwu.com"
+    "name": "Joshua David",
+    "url": "https://github.com/jdevtt",
+    "email": "jdesol.tt@gmail.com"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "next lint",
     "prepare": "husky install"
   },
